@@ -37,7 +37,13 @@ describe('Game', () => {
   });
 
   it.skip('should end game if player collides with opposing player', () => {
+      const game = new Game(ctx); 
+      let player1 = new Player(1, 300, 5, 5, 'red', 'black', 1, 0);
+      let player2 = new Player(795, 300, 5, 5, 'yellow', 'black', -1, 0);
 
+      player1.isCollidingWith(player2); 
+      player2.isCollidingWith(player1); 
+      assert.equal(gameOver(), true); 
   }); 
   
   it.skip('should be able to change direction when keys are pressed', () => {
