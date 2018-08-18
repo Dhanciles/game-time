@@ -13,7 +13,7 @@ describe('Player', () => {
   });
 
 
-  it('if player collides with wall, decrease score', () => {
+  it.skip('if player collides with wall, decrease score', () => {
     player = new Player(this.x, this.y, this.height, this.width, this.color, this.borderColor, this.lives);
 
 
@@ -31,17 +31,17 @@ describe('Player', () => {
 
   });
 
-  it('if player collides with other player, decrease score', () => {
+  it.skip('if player collides with other player, decrease score', () => {
   
 
   });
 
-  it('should have trail path?', () => {
+  it.skip('should have trail path?', () => {
  
 
   });
 
-  it('should start out with 3 lives', () => {
+  it.skip('should start out with 3 lives', () => {
     assert.isDefined(this.lives);
     assert.equal(this.lives, 3);
 

@@ -12,12 +12,19 @@ const ctx = {
 
 describe('Game', () => {
 
-  it.skip('should take properties', () => {
-    //setup
-    //execution
-    //assertion
-    //teardown
+  it('should take properties', () => {
+    var game = new Game(); 
+    assert.deepEqual(game, {
+      ctx: ctx, 
+      paused: false, 
+      gameOver: false
+    })
+
   })
+    //setup
+    //assertion
+    //execution
+    //teardown
 
   it.skip('should end the game if block collides with wall', () => {
       var player1 = new Player(50, 50, 10, 10, 'red', 'black');
@@ -29,7 +36,8 @@ describe('Game', () => {
   });
 
   it.skip('should collide with walls', () => {})
-  it('should be able to change direction when keys are pressed', () => {
+  
+  it.skip('should be able to change direction when keys are pressed', () => {
       var player1 = new Player(50, 50, 10, 10, 'red', 'black');
       var player2 = new Player(100, 100, 10, 10, 'green', 'black');
       assert.notStrictEqual(player1.x === 50, false)

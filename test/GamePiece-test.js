@@ -8,7 +8,7 @@ describe('GamePiece', () => {
     gamepiece = new GamePiece(30, 30, 10, 10, 'green')
   });
 
-  it('should take properties', () => {
+  it.skip('should take properties', () => {
     // Assertion
     assert.deepEqual(gamepiece, {
       x: 30,
@@ -24,43 +24,43 @@ describe('GamePiece', () => {
     // Teardown
   });
 
-  it('should be able to move/change direction', () => {
+  it.skip('should be able to move/change direction', () => {
 
 
   });
 
 
-  it('should move left if keycode pressed is 37', () => {
+  it.skip('should move left if keycode pressed is 37', () => {
 
 
   });
 
-  it('should move right if keycode pressed is 39', () => {
+  it.skip('should move right if keycode pressed is 39', () => {
     
 
   });
 
-  it('should move down if keycode pressed is 40', () => {
+  it.skip('should move down if keycode pressed is 40', () => {
     
 
   });
 
-  it('should move up if keycode pressed is 38', () => {
+  it.skip('should move up if keycode pressed is 38', () => {
     
 
   });
 
-  it('should be able to collide with wall', () => {
+  it.skip('should be able to collide with wall', () => {
     
     
   });
 
-  it('should be able to collide with another gamepiece', () => {
+  it.skip('should be able to collide with another gamepiece', () => {
     
 
   });
 
-  it('if gamepiece collides with wall, player number of lives should decrease by 1', () => {
+  it.skip('if gamepiece collides with wall, player number of lives should decrease by 1', () => {
 
     const player = new Player();
 
@@ -75,7 +75,7 @@ describe('GamePiece', () => {
     
   });
 
-  it('if gamepiece collides with player 2', () => {
+  it.skip('if gamepiece collides with player 2', () => {
 
     const gamepiece2 = new GamePiece(150, 130, 10, 10, 'green');
 
