@@ -20,10 +20,6 @@ describe('Game', () => {
       gameOver: false
     })
   }); 
-    //setup
-    //assertion
-    //execution
-    //teardown
 
   it.skip('should end the game if player collides with wall', () => {
       const game = new Game(ctx); 
@@ -46,18 +42,29 @@ describe('Game', () => {
       assert.equal(gameOver(), true); 
   }); 
   
-  it.skip('should be able to change direction when keys are pressed', () => {
+  it.skip('players should be able to change direction when keys are pressed', () => {
+      const game = new Game(ctx); 
       var player1 = new Player(1, 300, 5, 5, 'red', 'black', 1, 0);
       var player2 = new Player(795, 300, 5, 5, 'yellow', 'black', -1, 0);
 
-      assert.notStrictEqual(player1.x === 50, false)
-      assert.notStrictEqual(player1.y === 50, false)
-      assert.notStrictEqual(player2.x === 100, false)
-      assert.notStrictEqual(player2.y === 100, false)
-      // assert.equals(player1.handleKeyPress(), true)
-      // assert.equals(player2.handleKeyPress(), true)   
+      game.handleKeyPress(e); 
+      game.handlePlayer(player1); 
+      player1.changeDirection(direction); 
 
-  })
+      game.handleKeyPress(e); 
+      game.handlePlayer(player2);       
+      player2.changeDirection(direction); 
 
-  it.skip('should be able to changeDirection', () => {})
-}); 
+      assert.equals(player1.handleKeyPress(e), true); 
+      assert.notStrictEqual(player1.x, 1, true); 
+      assert.notStrictEqual(player1.y, 300, true);
+      
+      assert.equals(player2.handleKeyPress(), true)    
+      assert.notStrictEqual(player2.x, 795, true); 
+      assert.notStrictEqual(player2.y, 300, true); 
+
+  }); 
+    //setup
+    //assertion
+    //execution
+    //teardown
