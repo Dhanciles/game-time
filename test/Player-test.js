@@ -13,33 +13,33 @@ describe('Player', () => {
   });
 
 
-  it.skip('if player collides with wall, decrease score', () => {
-    player = new Player(this.x, this.y, this.height, this.width, this.color, this.borderColor, this.lives);
+  // it.skip('if player collides with wall, decrease score', () => {
+  //   player = new Player(this.x, this.y, this.height, this.width, this.color, this.borderColor, this.lives);
 
 
-    assert.equal(player.isCollidingWithWall, true);
+  //   assert.equal(player.isCollidingWithWall, true);
 
-    for(i = 0; player.players; i--){
+  //   for(i = 0; player.players; i--){
 
       
 
 
-    }
+  //   }
 
-    assertequal(player.lives, player.lives - 1);
+  //   assertequal(player.lives, player.lives - 1);
 
 
-  });
+  // });
 
   it.skip('if player collides with other player, decrease score', () => {
   
 
   });
 
-  it.skip('should have trail path?', () => {
+  // it.skip('should have trail path?', () => {
  
 
-  });
+  // });
 
   it.skip('should start out with 3 lives', () => {
     assert.isDefined(this.lives);
@@ -52,5 +52,8 @@ describe('Player', () => {
 
 });
 
-
+//setup
+    //assertion
+    //execution
+    //teardown
 module.exports = Player;

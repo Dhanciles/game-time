@@ -28,8 +28,7 @@ describe('Game', () => {
 
       player1.isColliingWithWall(canvasWidth, canvasHeight)
       player2.isColliingWithWall(canvasWidth, canvasHeight)
-      assert.equal(gameEnd(), true)
-      
+      assert.equal(gameEnd(), true)      
   });
 
   it.skip('should end game if player collides with opposing player', () => {
@@ -62,9 +61,4 @@ describe('Game', () => {
       assert.equals(player2.handleKeyPress(), true)    
       assert.notStrictEqual(player2.x, 795, true); 
       assert.notStrictEqual(player2.y, 300, true); 
-
   }); 
-    //setup
-    //assertion
-    //execution
-    //teardown
