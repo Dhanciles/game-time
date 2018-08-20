@@ -1,9 +1,18 @@
-body{
-/*  background-color: black;
-*/background-image: url('https://pre00.deviantart.net/da7f/th/pre/i/2013/012/e/b/another_tron_type_floor_by_taz09-d5rbmoq.png') !important; 
+body {
+  background-color: black;
+  background-image: url('https://pre00.deviantart.net/da7f/th/pre/i/2013/012/e/b/another_tron_type_floor_by_taz09-d5rbmoq.png') !important; 
   background-size: cover;
   background-repeat: no-repeat;
   height: 100;
+
+}
+
+#tron-title {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 #game {
@@ -14,14 +23,14 @@ body{
   margin-top: 5rem;
 }
 
-#tron-button{
+#tron-button {
   background-color: red;
   color: yellow;
   height: 50px;
   width: 100px;
 }
 
-.button-section{
+.button-section {
   display: flex;
   justify-content: center;
   margin-top: 5%;
