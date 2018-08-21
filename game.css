@@ -16,6 +16,8 @@ body{
 }
 
 #game {
+/*  background-image: url('https://www.xmple.com/wallpaper/graph-paper-white-black-grid-3840x2160-c2-000000-f8f8ff-l2-5-150-a-0-f-20.svg');
+  background-repeat: repeat;*/
   border: 1px dashed white;
   margin: auto;
   display: block;
