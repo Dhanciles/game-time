@@ -27,20 +27,29 @@ describe('Player', function() {
 
   });
 
-  beforeEach('instantiate player', function() {
+  // beforeEach('instantiate player', function() {
    
-  });
+  // });
 
   it('should instantiate a new player', function() {
-    
+    player = new Player(1, 300, 5, 5, 'red', 'black', 1, 0);
+
+    player.players[0]
+
+    assert.isObject(player1);
+    assert.isObject(player2)
+
   });
 
   it('should have a starting point', function() {
-   
+     player = new Player(1, 300, 5, 5, 'red', 'black', 1, 0);
+
+    
   });
 
   it('should have a color', function() {
-  
+     player = new Player(1, 300, 5, 5, 'red', 'black', 1, 0);
+    
   });
 
   it('should initialize an arry of trails', function() {
