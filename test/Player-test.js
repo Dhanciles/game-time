@@ -8,21 +8,30 @@ describe('Player', function() {
     constructor() {
       this.canvas = 'canvas#game';
       this.fillStyle = '#000000';
-      this.filter = 
-
+      // this.filter = 
     
     }
   }
+
+  it('should take properties', () => {
+    assert.deepEqual(player, {
+      x: 30,
+      y: 30,
+      height: 10,
+      width: 10,
+      color: 'green',
+      borderColor: 'yellow'
+      dx: 1,
+      dy: 0,
+    });
+
+  });
 
   beforeEach('instantiate player', function() {
    
   });
 
   it('should instantiate a new player', function() {
-    
-  });
-
-  it('should be an object', function() {
     
   });
 
@@ -34,24 +43,24 @@ describe('Player', function() {
   
   });
 
-  it('should initialize a trails array', function() {
+  it('should initialize an arry of trails', function() {
     
   });
 
  
-  it('should increase its x location if moving to the right', function() {
+  it('if moving to the right, x location should increase', function() {
     
   });
 
-  it('should decrease its x location if moving to the left', function() {
+  it('if moving to the left, x location should decrease', function() {
     
   });
 
-  it('should increate its y location if moving down', function() {
+  it('if moving down, y location should increase', function() {
     
   });
 
-  it('should decrease its y location if moving up', function() {
+  it('if moving up, y location should decrease', function() {
     
   });
 });
