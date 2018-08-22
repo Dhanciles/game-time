@@ -9,13 +9,21 @@
   <body background="/Users/Cierra/Documents/TP/game-time/images/tronimg1.png">
     <p id="tron-title">Tron</p>
     <section class="player-lives">
-      <h3 id="player1-lives">Player 1 Lives:</h3>
-      <h3 id="player2-lives">Player 2 Lives:</h3>
+    <div class="tally-div">
+    <h3>Player 1 <span class="lives-text">Lives</span>:<span id="player1-lives">0</span></h3>
+    <h3 class="scores"><span class="score-text">Score</span>: 0</h3>
+    </div>
+    <div class="tally-div">
+    <h3>Player 2 <span class="lives-text">Lives</span>:<span id="player2-lives">0</span></h3>
+    <h3 class="scores"><span class="score-text">Score</span>: 0</h3>
+    </div>
     </section>
     <section class="button-section">
-      <button id="tron-button">Start Game</button>
-    </section>
-    <canvas id="game" width="800" height="700"></canvas>
+    <button id="tron-button">Start</button>
+  </section>
+  <canvas id="game" width="800" height="700">
+  </canvas>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="

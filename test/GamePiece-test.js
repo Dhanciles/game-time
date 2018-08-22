@@ -71,4 +71,4 @@ describe('GamePiece', () => {
     assert.equal(player.lives, player.lives - 1);
     assert.isFalse(colliding);
   });
-})
+});
