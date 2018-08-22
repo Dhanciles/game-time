@@ -1,19 +1,22 @@
-body{
+body {
   background-color: black;
   background-image: url('https://pre00.deviantart.net/da7f/th/pre/i/2013/012/e/b/another_tron_type_floor_by_taz09-d5rbmoq.png') !important; 
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#tron-title{
+
+#tron-title {
   font-family: 'Orbitron', sans-serif;
   color: white;
   font-size: 5rem;
   display: flex;
   justify-content: center;
+
 }
 
-.player-lives{
+
+.player-lives {
   display: flex;
   color: white;
   justify-content: space-between;
@@ -55,7 +58,8 @@ body{
   margin-top: 3rem;
   margin-bottom: 200px;
 }
-#tron-button{
+
+#tron-button {
   background-color: red;
   color: yellow;
   height: 50px;
@@ -65,7 +69,8 @@ body{
   bottom: 90px;
   font-size: 1.5rem;
 }
-.button-section{
+
+.button-section {
   display: flex;
   justify-content: center;
   margin-top: 0;
@@ -91,5 +96,4 @@ body{
     left: 29rem;
     top: 11rem;
   }
-
 }
