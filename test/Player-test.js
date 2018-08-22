@@ -14,12 +14,11 @@ describe('Player', function() {
   class Context {
     constructor() {
       this.canvas = 'canvas#game';
-      this.fillStyle = '#000000';
-    
+      this.fillStyle = '#000000'; 
     }
-  }
+  }; 
 
-  it.skip('should take properties', () => {
+  it('should take properties', () => {
     assert.deepEqual(player, {
       x: 30,
       y: 30,
@@ -30,11 +29,10 @@ describe('Player', function() {
       dx: 1,
       dy: 0,
     });
-
   });
 
-  it.skip('should instantiate a new player', function() {
+
+  it('should instantiate a new player', function() {
     player = new Player(1, 300, 5, 5, 'red', 'black', 1, 0, 3);
   });
-
-});
+})
