@@ -30,6 +30,12 @@ body{
 
 .scores{
   margin-top: 1px;
+  width: 720px;
+  position: relative;
+  bottom: 50px;
+  position: relative;
+  left: 28%;
+  top: 230px;
 }
 
 #game {
@@ -46,8 +52,9 @@ body{
 .tally-div{
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 200px;
 }
-
 #tron-button{
   background-color: red;
   color: yellow;
@@ -58,7 +65,6 @@ body{
   bottom: 90px;
   font-size: 1.5rem;
 }
-
 .button-section{
   display: flex;
   justify-content: center;
