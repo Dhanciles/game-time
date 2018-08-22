@@ -1,6 +1,6 @@
 const { assert } = require('chai');
-const GamePiece = require('./GamePiece.js')
-const Game = require('./Game.js')
+const GamePiece = require('../lib/GamePiece.js')
+const Game = require('../lib/Game.js')
 
 describe('GamePiece', () => {
   let gamepiece;
@@ -27,11 +27,11 @@ describe('GamePiece', () => {
 
   it('should be able to move/change direction', () => {
     let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
+
     gamepiece.move();
-    assert.deepEqual(gamepiece.move(), {gamepiece.x += gamepiece.dx * gamepiece.dxv;
-    gamepiece.y += gamepiece.dy * gamepiece.dyv;})
-
-
+    assert.deepEqual(gamepiece.move(), 
+      { gamepiece.x += gamepiece.dx * gamepiece.dxv;
+      gamepiece.y += gamepiece.dy * gamepiece.dyv });
   });
 
   it('should be able to collide with wall', () => {

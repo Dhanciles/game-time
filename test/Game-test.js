@@ -1,6 +1,6 @@
 const { assert } = require('chai');
-const Game = require('./Game');
-const Player = require('./Player');
+const Game = require('../lib/Game');
+const Player = require('../lib/Player');
 
 const ctx = {
   canvas: {
@@ -49,3 +49,4 @@ describe('Game', () => {
     assert.equal(player2Collides, true);
     assert.equal(game.gameOver, true);
   });
+});
