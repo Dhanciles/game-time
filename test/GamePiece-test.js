@@ -92,6 +92,5 @@ describe('GamePiece', () => {
     // Assertion
     assert.isFalse(colliding);
   });
-
-
 });
+
