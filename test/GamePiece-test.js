@@ -1,8 +1,11 @@
 const { assert } = require('chai');
 const GamePiece = require('../lib/GamePiece.js')
+const Game = require('../lib/Game.js')
 
 describe('GamePiece', () => {
   let gamepiece;
+  let game = new Game(ctx);
+  let ctx = game.ctx;
 
   beforeEach(() => {
     gamepiece = new GamePiece(30, 30, 10, 10, 'green')
@@ -25,37 +28,34 @@ describe('GamePiece', () => {
   });
 
   it('should be able to move/change direction', () => {
+    let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
 
+    gamepiece.move();
 
-  });
+    assert.deepEqual(gamepiece.move(), {gamepiece.x += gamepiece.dx * gamepiece.dxv;
+    gamepiece.y += gamepiece.dy * gamepiece.dyv;})
 
-
-  it('should move left if keycode pressed is 37', () => {
-
-
-  });
-
-  it('should move right if keycode pressed is 39', () => {
-    
-
-  });
-
-  it('should move down if keycode pressed is 40', () => {
-    
-
-  });
-
-  it('should move up if keycode pressed is 38', () => {
-    
 
   });
 
   it('should be able to collide with wall', () => {
-    
+    let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
+
+    let game = new Game(ctx);
+
+    let player1Colliding = game.players[0].isCollidingWithWall();
+    let player2Colliding = game.players[1].isCollidingWithWall();
+
+    game.move();
+
+    assert.equal(player1Colliding, true);
+
+    assert.equal(player2Colliding, true);
     
   });
 
   it('should be able to collide with another gamepiece', () => {
+    let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
     
 
   });
