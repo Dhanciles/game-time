@@ -13,7 +13,7 @@ describe('Game', () => {
   let game = new Game(ctx);
   let ctx = game.ctx;
 
-  it('should take properties', () => {
+  it('should instans', () => {
     assert.deepEqual(game, {
       ctx: ctx
     });

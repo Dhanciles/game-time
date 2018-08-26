@@ -8,7 +8,8 @@ describe('Player', function() {
   let ctx = game.ctx;
 
   beforeEach(() => {
-    player = new Player(1, 300, 5, 5, 'red', 'black', 1, 0, 3)
+    let player1 = new Player (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
+    let player2 = new PLayer (795, 300, 5, 5, 'yellow', 'black', -1, 0, 3);
   });
   
   class Context {
@@ -24,8 +25,8 @@ describe('Player', function() {
       y: 30,
       height: 10,
       width: 10,
-      color: 'green',
-      borderColor: 'yellow'
+      color: color,
+      borderColor: borderColor,
       dx: 1,
       dy: 0,
     });
@@ -33,6 +34,7 @@ describe('Player', function() {
 
 
   it('should instantiate a new player', function() {
-    player = new Player(1, 300, 5, 5, 'red', 'black', 1, 0, 3);
+    let player1 = new Player (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
+    let player2 = new Player (795, 300, 5, 5, 'yellow', 'black', -1, 0, 3);
   });
 })

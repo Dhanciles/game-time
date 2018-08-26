@@ -8,7 +8,8 @@ describe('GamePiece', () => {
   let ctx = game.ctx;
 
   beforeEach(() => {
-    gamepiece = new GamePiece(30, 30, 10, 10, 'green')
+    gamepiece1 = new GamePiece(1, 300, 5, 5, 'red', 'black', 1, 0, 3),
+    gamepiece2 = new GamePiece(795, 300, 5, 5, 'yellow', 'black', -1, 0, 3)
   });
 
   it('should take properties', () => {
@@ -17,7 +18,7 @@ describe('GamePiece', () => {
       y: 30,
       height: 10,
       width: 10,
-      color: 'green',
+      color: color,
       dx: 1,
       dy: 0,
       dxv: 1,
@@ -26,16 +27,17 @@ describe('GamePiece', () => {
   });
 
   it('should be able to move/change direction', () => {
-    let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
+    let gamepiece1 = new GamePiece (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
+    let gamepiece2 = new GamePiece(795, 300, 5, 5, 'yellow', 'black', -1, 0, 3); 
 
     gamepiece.move();
-    assert.deepEqual(gamepiece.move(), 
-      { gamepiece.x += gamepiece.dx * gamepiece.dxv;
-      gamepiece.y += gamepiece.dy * gamepiece.dyv });
-  });
+    assert.equal(game.move, true);
+  }); 
 
   it('should be able to collide with wall', () => {
-    let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
+    let gamepiece1 = new GamePiece (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
+    let gamepiece2 = new GamePiece(795, 300, 5, 5, 'yellow', 'black', -1, 0, 3);
+    
     let game = new Game(ctx);
     let player1Colliding = game.players[0].isCollidingWithWall();
     let player2Colliding = game.players[1].isCollidingWithWall();
@@ -48,7 +50,8 @@ describe('GamePiece', () => {
   });
 
   it('should be able to collide with another gamepiece', () => {
-    let gamepiece = new GamePiece(30, 30, 10, 10, 'green');
+    let gamepiece1 = new GamePiece (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
+    let gamepiece2 = new GamePiece(795, 300, 5, 5, 'yellow', 'black', -1, 0, 3);
   });
 
   it('if gamepiece collides with wall, player number of lives should decrease by 1', () => {
@@ -62,7 +65,9 @@ describe('GamePiece', () => {
   });
 
   it('if gamepiece collides with player 2', () => {
-    const gamepiece2 = new GamePiece(150, 130, 10, 10, 'green');
+    let gamepiece1 = new GamePiece (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
+    let gamepiece2 = new GamePiece(795, 300, 5, 5, 'yellow', 'black', -1, 0, 3);
+    
     const player = new Player();
     const colliding = gamepiece.isCollidingWith(gamepiece2);
     gamepiece.move();
