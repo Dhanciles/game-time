@@ -19,7 +19,7 @@ describe('Player', function() {
     }
   }; 
 
-  it('should take properties', () => {
+  it.skip('should take properties', () => {
     assert.deepEqual(player, {
       x: 30,
       y: 30,
@@ -33,7 +33,7 @@ describe('Player', function() {
   });
 
 
-  it('should instantiate a new player', function() {
+  it.skip('should instantiate a new player', function() {
     let player1 = new Player (1, 300, 5, 5, 'red', 'black', 1, 0, 3); 
     let player2 = new Player (795, 300, 5, 5, 'yellow', 'black', -1, 0, 3);
   });
