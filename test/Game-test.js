@@ -18,7 +18,6 @@ describe('Game', () => {
     assert.equal(game.gameOver, false);
     assert.equal(game.paused, false); 
     assert.equal(game.players.length[2]); 
-    assert.equal(game.livesCounter, 3);
   });
 
   it('should end the game if players collide with wall', () => {

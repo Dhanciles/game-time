@@ -19,6 +19,6 @@ describe('Player', function() {
     assert.equal(player.y, 300); 
     assert.equal(player.height, 5); 
     assert.equal(player.width, 5);
-    assert.equal(player.lives, 3);  
+    assert.equal(player.trails.length[2]);  
     }); 
 }); 
